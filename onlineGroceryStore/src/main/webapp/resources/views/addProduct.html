@@ -1,0 +1,49 @@
+<div ng-controller="addProductController">
+	<form name="form" role="form" class="addProduct">
+		<fieldset>
+			<div class="row">
+				<br>
+				<div class="form-group" ng-class="{ 'has-error': form.productId.$dirty && form.productId.$error.required }">
+		            <label for="username" class="addproductLabel">Product ID</label>
+		            <input type="text" name="productId" id="productId" class="form-control productInput" ng-model="product.productId" required />
+		            <span ng-show="form.productId.$dirty && form.productId.$error.required" class="help-block errorMsg">Id for product is required</span>
+		        </div>
+		        <div class="form-group" ng-class="{ 'has-error': form.productName.$dirty && form.productName.$error.required }">
+		            <label for="username" class="addproductLabel">Product Name</label>
+		            <input type="text" name="productName" id="productName" class="form-control productInput" ng-model="product.productName" required />
+		            <span ng-show="form.productName.$dirty && form.productName.$error.required" class="help-block errorMsg">Product Name is required</span>
+		        </div>
+		        <div class="form-group" ng-class="{ 'has-error': form.zipCode.$dirty && form.zipCode.$error.required }">
+		            <label for="type" class="addproductLabel">Warehouse Location</label>
+		            <select type="type" name="zipCode " id="zipCode" class="form-control productInput" ng-options="w.zipcode for w in warehouse" ng-model="zipcode" required></select>
+		            <span ng-show="form.zipCode.$dirty && form.zipCode.$error.required" class="help-block errorMsg">Warehouse Location is required</span>
+		        </div>
+		        <div class="form-group" ng-class="{ 'has-error': form.size.$dirty && form.size.$error.required }">
+		            <label for="username" class="addproductLabel">Product size</label>
+		            <input type="text" name="size" id="size" class="form-control productInput" ng-model="product.size" required />
+		            <span ng-show="form.size.$dirty && form.size.$error.required" class="help-block errorMsg">Product size is required</span>
+		        </div>
+		        <div class="form-group" ng-class="{ 'has-error': form.type.$dirty && form.type.$error.required }">
+		            <label for="type" class="addproductLabel">Product Type</label>
+		            <select type="type" name="type" id="type" class="form-control productInput" ng-options="p.name for p in productType" ng-model="prdtype" required></select>
+		            <span ng-show="form.type.$dirty && form.type.$error.required" class="help-block errorMsg">Product Type is required</span>
+		        </div>
+		        <div class="form-group">
+		            <label for="username" class="addproductLabel">Additional Information</label>
+		            <input type="text" name="additionalInformationContent" id="additionalInformationContent" class="form-control productInput" ng-model="product.additionalInformationContent"/>
+		        </div>
+		        <div class="form-group" ng-class="{ 'has-error': form.price.$dirty && form.price.$error.required }">
+		            <label for="username" class="addproductLabel">Product Price</label>
+		            <input type="text" name="price" id="price" class="form-control productInput" ng-model="productPrice.price" required />
+		            <span ng-show="form.price.$dirty && form.price.$error.required" class="help-block errorMsg">Product Price is required</span>
+		        </div>
+		        <div class="form-group" ng-class="{ 'has-error': form.noOfStocks.$dirty && form.noOfStocks.$error.required }">
+		            <label for="username" class="addproductLabel">No Of Stocks</label>
+		            <input type="text" name="noOfStocks" id="noOfStocks" class="form-control productInput" ng-model="stocks.noOFITEM" required />
+		            <span ng-show="form.noOfStocks.$dirty && form.noOfStocks.$error.required" class="help-block errorMsg">Product Price is required</span>
+		        </div>
+		        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary" ng-click="addProduct()">Register</button>
+      		</div>
+		</fieldset>
+	</form>
+</div>

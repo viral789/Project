@@ -1,0 +1,45 @@
+<div class="modal-header">
+	<h1>Log in</h1>
+</div>
+<div class="modal-body">
+	<form role="form" name="form">
+		<fieldset>
+			<div class="row">
+				<div class="col-sm-12 col-md-10  col-md-offset-1" ng-class="{'has-error' : !loggedin}">
+					<p ng-show = false class="help-block">Invalid UserName or Password</p>
+				</div>
+				<div class="col-sm-12 col-md-10  col-md-offset-1 ">								
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"> <i
+								class="glyphicon glyphicon-user"></i>
+							</span> 
+							<div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+					            <input type="text" name="username" id="username" class="form-control" placeholder="username" ng-model="username" required />
+					        </div>
+						</div>
+						<span ng-show="form.username.$dirty && form.username.$error.required" class="help-block loginErrorMsg">Username is required</span>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"> <i
+								class="glyphicon glyphicon-lock"></i>
+							</span> 
+							<div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+					            <input type="password" name="password" id="password" class="form-control" placeholder="Password" ng-model="password" required />
+					        </div>
+						</div>
+						<span ng-show="form.password.$dirty && form.password.$error.required" class="help-block loginErrorMsg">Password is required</span>
+					</div>
+					<div class="form-group loginSubmit">
+						<input type="submit" class="btn btn-primary" ng-disabled="form.$invalid" value="Login" ng-click="submitForm(username, password)" style="margin-left:15%">
+						<input type="button" class="btn btn-default " value="Cancel" ng-click="cancelForm()" style="margin-left:5%"/>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<div class="modal-footer">
+	<a href ="" class="signUp" ng-click="signUp()">Sign up </a> 
+</div>

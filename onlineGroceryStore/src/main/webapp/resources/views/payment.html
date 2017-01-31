@@ -1,0 +1,73 @@
+<div ng-controller="paymentController" class="container">
+	<div class="row">
+		<div>
+			<button type="submit"  class="btn btn-primary pull-right deleteAddress" ng-click="deleteAddress()">Delete Address</button>
+		</div>
+        <div class="col-xs-12 col-md-4 payment">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Payment Details</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+	                    <div class="form-group">
+	                        <label for="cardNumber">
+	                            CARD NUMBER</label>
+	                        <div class="input-group">
+	                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+	                                ng-model="customer.creditCardNo" required autofocus />
+	                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+	                        </div>
+	                    </div>
+	                      <!-- Name -->
+				          <div class="control-group">
+				          	<div>
+				          		<label class="control-label"  for="username">Payment you want to pay</label>
+				            	<input type="text" class="form-control" id="cardNumber" placeholder="" ng-model="amtPaid" required  />
+				          	</div>
+				            <div class="controls">
+								<div class="paymentExpiry">
+		                           <label for="expityMonth" class="pull-left">EXPIRY DATE</label>
+		                           <div class="col-sm-2">
+		                           		<input type="text" class="form-control" id="expityMonth" placeholder="MM" ng-model="customer.expMONTH" required />
+		                           </div>
+		                           <div class="col-sm-2">
+		                          		<input type="text" class="form-control" id="expityYear" placeholder="YY" ng-model="customer.expYEAR" required />
+		                          	</div>
+				                </div>
+			                   <!--  <div>
+			                        <label for="cvCode" class="pull-left">CVV CODE</label>
+			                        <input type="password" class="form-control paymentCVV" id="cvCode" placeholder="CVV2" required />
+			                    </div> -->
+								<br/>
+				                <!-- <div>
+				                    <label for="billingAddress">Billing Address</label>
+				                    <textarea rows="4" cols="50" class="form-control" id="billingAddress" placeholder="Billing Address" required ></textarea>
+				                </div> -->
+				                <div>
+				                	<label for="StreetNo">Street No</label>
+				                	<input type="text" class="form-control" id="streetNo" placeholder="" required  ng-model="address.streetNO"/>
+				                </div>
+				                <br/>
+				                <div>
+				                	<label for="zipcode">ZipCode</label>
+				                	<input type="text" class="form-control" id="zipcode" placeholder="" required  ng-model="address.zipCODE"/>
+				                </div>
+				            </div>
+						</div>
+						<br/>
+						<div class="pull-right">
+					    	<label for="username" class="addproductLabel">Grand Total: </label>
+							<span >{{order.totalPRICEWITHREAMINING}}</span>
+					    </div>
+                    </form>
+                </div>
+            </div>
+            <br/>
+            <button type="submit"  class="btn btn-primary pull-right" ng-click="payNow()">Pay</button>	
+            <br/>
+            <br/>
+            
+        </div>
+    </div>
+</div>

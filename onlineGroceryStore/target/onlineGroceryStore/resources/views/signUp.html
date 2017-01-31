@@ -1,0 +1,66 @@
+<!-- <h1>Sign up here</h1> -->
+
+<div class="modal-header">
+	<h1>Registration</h1>
+</div>
+<div class="modal-body">
+	<form name="form" role="form">
+		<fieldset>
+			<div class="row">
+				  <div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
+			            <label for="username" class="signupLabel">First name</label>
+			            <input type="text" name="firstName" id="firstName" class="form-control signupInput" ng-model="user.firstName" required />
+			            <span ng-show="form.firstName.$dirty && form.firstName.$error.required" class="help-block errorMsg">First name is required</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.lastName.$dirty && form.lastName.$error.required }">
+			            <label for="username" class="signupLabel">Last name</label>
+			            <input type="text" name="lastName" id="Text1" class="form-control signupInput" ng-model="user.lastName" required />
+			            <span ng-show="form.lastName.$dirty && form.lastName.$error.required" class="help-block errorMsg">Last name is required</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+			            <label for="username" class="signupLabel">Username</label>
+			            <input type="text" name="username" id="username" class="form-control signupInput" ng-model="user.userName" required />
+			            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block errorMsg">Username is required</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.emailId.$dirty && form.emailId.$error.required }">
+			            <label for="username" class="signupLabel">Email id</label>
+			            <input type="text" name="emailId" id="emailId" class="form-control signupInput" ng-model="user.eMailId" required />
+			            <span ng-show="form.emailId.$dirty && form.emailId.$error.required" class="help-block errorMsg">Email Id is required</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+			            <label for="password" class="signupLabel">Password</label>
+			            <input type="password" name="password" id="password" class="form-control signupInput" ng-model="user.passWord" required />
+			            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block errorMsg">Password is required</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.repassword.$dirty && form.repassword.$error.required }">
+			            <label for="repassword" class="signupLabel">Re-Password</label>
+			            <input type="password" name="repassword" id="repassword" class="form-control signupInput" ng-model="repassword" required />
+			            <span ng-show="form.repassword.$dirty && form.repassword.$error.required" class="help-block errorMsg">Password does not matched</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.type.$dirty && form.type.$error.required }">
+			            <label for="type" class="signupLabel">Type</label>
+			            <select type="type" name="type" id="type" class="form-control signupInput" ng-options="u.role for u in userType" ng-model="type" required></select>
+			            <span ng-show="form.type.$dirty && form.type.$error.required" class="help-block errorMsg">Type is required</span>
+			        </div>
+			        <div ng-if="type.type == 2">
+			        	<div class="form-group" ng-class="{ 'has-error': form.jobTitle.$dirty && form.jobTitle.$error.required }">
+			        		<label for="username" class="signupLabel">Job Title</label>
+			            	<input type="text" name="jobTitle" id="jobTitle" class="form-control signupInput" ng-model="staff.jobTitle" required />
+			            	<span ng-show="form.jobTitle.$dirty && form.jobTitle.$error.required" class="help-block errorMsg">Job Title is required</span>
+			        	</div>
+			        	<div class="form-group" ng-class="{ 'has-error': form.salary.$dirty && form.salary.$error.required }">
+			        		<label for="username" class="signupLabel">Salary</label>
+			            	<input type="text" name="salary" id="jobTitle" class="form-control signupInput" ng-model="staff.salary" required />
+			            	<span ng-show="form.salary.$dirty && form.salary.$error.required" class="help-block errorMsg">Salary is required</span>
+			        	</div>
+      				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<div class="modal-footer">
+    <div class="form-actions">
+        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary" ng-click="registration()">Register</button>
+        <a href="" class="btn btn-link" ng-click="cancelSignup()">Cancel</a>
+    </div>
+</div>

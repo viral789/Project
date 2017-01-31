@@ -1,0 +1,37 @@
+<div ng-controller="loaderController">
+	<div class="header">
+		<h1>
+			Online Grocery Store
+		</h1>
+		<h4>Groceries delivered to your doorstep</h4>
+	</div>
+	<div class="searchCheckout">
+		<input type="text" ng-model="search" placeholder="Search" />
+	    <a class="btn btn-danger pull-right" ng-disabled = "!authenticate" ng-click="checkOut()"> Checkout <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+	    </a>
+	</div>
+	<nav class="navbar navbar-inverse">
+	  	<div class="container-fluid">
+	   		<div>
+	      		<ul class="nav navbar-nav">
+	        		<li><a ui-sref = "home" class="option1">Home</a></li>
+	        		<!-- <li ng-show="staff"><a ng-click="addProduct()" class="option4">Add Product</a></li> -->
+	        		<li ng-show="staff"><a ui-sref="addProduct" class="option4">Add Product</a></li>
+	      		</ul>
+	      		<ul ng-show="!authenticate" class="nav navbar-nav navbar-right">
+	        		<li><a class="login" ng-click="login()"><span class="glyphicon"></span> Sign In</a></li>
+	      		</ul>
+	      		<ul ng-show="authenticate" class="nav navbar-nav navbar-right">
+	      			<li><a class="authenticated">Hi  {{username}}</a></li>
+	        		<li><a class="logout" ng-click="logout()"><span class="glyphicon"></span> Log Out</a></li>
+	      		</ul>
+	    	</div>
+		</div>
+	</nav>
+	<div class="banner">
+		<img class="bannerbody" src="resources/images/banner5.jpg" alt="">
+	</div>
+	<div>
+	   	<div ui-view></div>
+   	</div>
+</div>

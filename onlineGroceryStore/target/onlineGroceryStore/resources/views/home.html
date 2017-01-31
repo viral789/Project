@@ -1,0 +1,34 @@
+<div ng-controller="homeController">
+	<aside class="sidebar">
+		<ul>
+			<h3>Product Type</h3>			
+			<li>Fruits</li>
+			<li>Vegetables</li>
+			<li>Dairy Products</li>
+			<li>Frozen Food</li>
+			<li>Bread and Bakery</li>	
+			<li>Drinks</li>
+		</ul>
+	</aside>
+	<div class="rightSide">
+		<section>
+			<form role="form">
+		        <table border="1" class="table table-hover table-bordered table-striped homeTable">
+		            <tbody>
+		                <tr ng-repeat= "prod in getProduct | pageDisplay:eventLogObjects.pageSize:eventLogObjects.currentPageIndex | filter: search | orderBy: 'name'">
+		                	<td>
+		                		<!-- <div><img class="homeImage" alt="" ng-src="resources/images/banana.jpg"></div> -->
+		                		<div><img class="homeImage" alt="" ng-src="{{prod.images}}"></div>prod.images
+		                		<div><button type="submit" class="btn btn-primary homeBtn" ng-disabled = "!authenticate" ng-click="deletefromCart(prod.productId)" >Delete from Cart</button></div>
+		                		<div><button type="submit" class="btn btn-primary homeBtn addToCart" ng-disabled = "!authenticate" ng-click="addtoCart(prod)">Add To Cart</button></div>
+		                		<span class = "homeProductName">{{prod.productName}} For {{prod.price}}</span>
+		                	</td>
+		                </tr>
+		            </tbody>
+		        </table>	
+		        <monitoring-paginate list="getProduct" records-per-page="eventLogObjects.pageSize" 
+					current-index="eventLogObjects.currentPageIndex"></monitoring-paginate>
+		    </form>
+		</section>
+	</div>
+</div>
