@@ -1,0 +1,32 @@
+.index{
+	width: 100%;
+}
+
+.heading{
+	text-align: center;
+}
+
+.linka{
+	color: white !important;
+	font-size: 1.5em;
+}
+
+.quizQuestion{
+	margin-left: 25%;
+}
+
+.quizBtn{
+	margin-right: 25%;
+}
+
+.quizQuestion .imageRender{
+	width: 25%;
+}
+
+.quizAnswer{
+	margin-left: 25%;
+}
+
+.quizAnswer .imageRender{
+	width: 25%;
+}

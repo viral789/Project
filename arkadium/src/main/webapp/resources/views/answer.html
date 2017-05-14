@@ -1,0 +1,19 @@
+<div class="answerPage">
+	<form name="form" role="form">
+		<fieldset>
+			<div class="quizAnswer" ng-show = "isAnswer">
+				<img class="imageRender" data-ng-src="data:image/png;base64,{{image}}" alt="">
+				<div>
+					<br>
+					<h3>User Answer:</h3> {{userAnswer}}
+					<h3>Actual Answer is:</h3>{{actualAnswer}}
+					<br>
+					<br>
+				</div>
+				<button type="submit" class="btn btn-primary quizBtn pull-right" ng-click="play()">Play Again</button>
+				<br>
+				<br>
+			</div>
+		</fieldset>
+	</form>
+</div>

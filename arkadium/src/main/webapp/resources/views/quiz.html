@@ -1,0 +1,20 @@
+<div class="quizPage">
+	<form name="form" role="form">
+		<fieldset>
+			<div class="quizQuestion">
+				<img class="imageRender" data-ng-src="data:image/png;base64,{{image}}" alt="">
+				<div>
+					<br>
+					<h1>{{randomQuestion.question}}</h1>
+					<h3>Answer:</h3>
+					<textarea rows="5" cols="100" ng-model="answer"></textarea>
+					<br>
+					<br>
+				</div>
+				<button type="submit" class="btn btn-primary quizBtn pull-right" ng-click="submit()">Submit Answer</button>
+				<br>
+				<br>
+			</div>
+		</fieldset>
+	</form>
+</div>
