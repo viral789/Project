@@ -24,4 +24,3 @@ Run application directly on tomcat server
 	4. Go to bin directory and start tomcat server by running startup.bat 
 	5. Before starting server follow the 5th step as mention above in Run Application in eclipse
 	6. Open browser and type the following url: localhost:8080/arkadium
-	

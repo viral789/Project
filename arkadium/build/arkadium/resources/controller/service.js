@@ -8,7 +8,7 @@ service.service('movieDatabase', function($http){
 			method : 'GET',
 	        url : 'resources/json/themoviedb_data.json'
 		})
-		.success(function(data){
+		.then(function(data){
 			return data;
 		});
 		return promise;
