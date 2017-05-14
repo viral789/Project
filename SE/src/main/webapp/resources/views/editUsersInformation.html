@@ -1,0 +1,54 @@
+<div class="modal-header">
+	<h1>Update User</h1>
+</div>
+<div class="modal-body">
+	<form name="form" role="form">
+		<fieldset>
+			<div class="row">
+				  <div class="form-group" ng-class="{ 'has-error': form.fName.$dirty && form.fName.$error.required }">
+			            <label for="fName" class="signupLabel">First name:</label>
+			            <input type="text" name="fName" id="fName" class="form-control signupInput" ng-model="user.fName" required />
+			            <span ng-show="form.fName.$dirty && form.fName.$error.required" class="help-block errorMsg">First name is required</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.lName.$dirty && form.lName.$error.required }">
+			            <label for="lName" class="signupLabel">Last name:</label>
+			            <input type="text" name="lName" id="lName" class="form-control signupInput" ng-model="user.lName" required />
+			            <span ng-show="form.lName.$dirty && form.lName.$error.required" class="help-block errorMsg">Last name is required</span>
+			        </div>
+			        <div class="form-group" ng-class="{ 'has-error': form.phoneNo.$dirty && form.phoneNo.$error.required }">
+			            <label for="phoneNo" class="signupLabel">Phone Number:</label>
+			            <input type="text" name="phoneNo" id="phoneNo" class="form-control signupInput" ng-model="user.phoneNo" required />
+			            <span ng-show="form.phoneNo.$dirty && form.phoneNo.$error.required" class="help-block errorMsg">Phone Number is required</span>
+			        </div>
+			        <div ng-if="user.type == 1">
+			        	<div class="form-group" ng-class="{ 'has-error': form.noOfcoursesRegister.$dirty && form.noOfcoursesRegister.$error.required }">
+			        		<label for="noOfcoursesRegister" class="signupLabel">No of Courses Registered:</label>
+			            	<input type="text" name="noOfcoursesRegister" id="noOfcoursesRegister" class="form-control signupInput" ng-model="user_student.noOfcoursesRegister" required />
+			            	<span ng-show="form.noOfcoursesRegister.$dirty && form.noOfcoursesRegister.$error.required" class="help-block errorMsg">No of Courses Registered is required</span>
+			        	</div>
+			        	<div class="form-group" ng-class="{ 'has-error': form.parentName.$dirty && form.parentName.$error.required }">
+			        		<label for="parentName" class="signupLabel">Parent Name:</label>
+			            	<input type="text" name="parentName" id="parentName" class="form-control signupInput" ng-model="user_student.parentName" required />
+			            	<span ng-show="form.parentName.$dirty && form.parentName.$error.required" class="help-block errorMsg">Parent Name is required</span>
+			        	</div>
+			        	<div class="form-group" ng-class="{ 'has-error': form.parentEmail.$dirty && form.parentEmail.$error.required }">
+			        		<label for="parentEmail" class="signupLabel">Parent Email:</label>
+			            	<input type="text" name="parentEmail" id="parentEmail" class="form-control signupInput" ng-model="user_student.parentEmail" required />
+			            	<span ng-show="form.parentEmail.$dirty && form.parentEmail.$error.required" class="help-block errorMsg">Parent Email is required</span>
+			        	</div>
+			        	<div class="form-group" ng-class="{ 'has-error': form.parentNo.$dirty && form.parentNo.$error.required } ">
+			        		<label for="parentNo" class="signupLabel">Parent Phone Number:</label>
+			            	<input type="text" name="parentNo" id="parentNo" class="form-control signupInput" ng-model="user_student.parentNo" required />
+			            	<span ng-show="form.parentNo.$dirty && form.parentNo.$error.required" class="help-block errorMsg">Parent Phone Number is required</span>
+			        	</div>
+      				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<div class="modal-footer">
+    <div class="form-actions">
+        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary" ng-click="updateUser()">Update</button>
+        <a href="" class="btn btn-link" ng-click="cancelUpdate()">Cancel</a>
+    </div>
+</div>

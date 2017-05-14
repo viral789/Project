@@ -1,0 +1,29 @@
+<div>
+	<h1>Check out Request</h1>
+	<br>
+	<div class ="requestTable">
+		<table border="1" class="table table-hover table-bordered table-striped timing-table">
+		    <thead>
+		        <tr>
+		            <th>Student Name</th>
+		            <th>Student EmailId</th>
+		            <th>Book Name</th>
+		            <th>ISBN</th>
+		            <th>Accept / Reject</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		    	<tr ng-repeat="book in studentRequestBook">
+	    			<td>{{book.studentName}}</td>
+	    			<td>{{book.studentEmail}}</td>
+	    			<td>{{book.bookName}}</td>
+	    			<td>{{book.bookIsbn}}</td>
+	    			<td>
+	    				<input type="button" class="btn btn-primary " value="Accept" ng-click="accept($index)" />
+	    				<input type="button" class="btn btn-primary " value="Reject" ng-click="reject($index)" />
+	    			</td>
+	    		</tr>
+		    </tbody>
+		</table>
+	</div>
+</div>

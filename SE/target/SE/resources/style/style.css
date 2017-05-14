@@ -1,0 +1,166 @@
+.container {
+	width: 100%;
+}
+
+.container .index-nav{
+	margin-bottom:0; 
+	background-color: #003300;
+}
+
+.indexnav .container-fluid{
+	margin-bottom: -2%;
+}
+
+.container-fluid .menu{
+	margin-top: 1%;
+}
+
+.menu .logo{
+	margin-right: 10%;
+}
+
+.menu .allLink{
+	width: 40%;
+}
+
+.linklist{
+	margin-right: 5%;
+}
+
+.linklist .linka{
+	font-size: 20px;
+	color: #99FF66 !important;
+}
+
+.registera {
+	font-size: 20px; 
+	cursor: pointer; 
+	cursor: hand; 
+	color: #99FF66 !important;
+}
+
+.nav .username{
+	font-size: 20px; 
+	color: #99FF66 !important;
+	margin-top: 3%;
+}
+
+.submitbtn{
+	margin-right: 3%;
+	margin-top: -2%;
+}
+
+.banner{
+	width: 100%;
+}
+
+.address{
+	margin-left: 72%;
+}
+
+.home{
+	margin-left: 5%;
+}
+
+.resourceMessage{
+	margin-left: 35%;
+}
+
+.help {
+	margin-top: -9%;
+	margin-right: 7%;
+}
+
+.loginErrorMsg{
+	color: red;
+}
+
+.loginSubmit{
+	margin: 0;
+}
+
+.registration{
+	margin-left: 18%;
+	margin-top: 10%;
+	margin-bottom: -4%;
+}
+
+.signupInput{
+	width: 55%;
+    float: right;
+    margin-right: 8%;
+}
+
+.signupLabel{
+	margin-left: 13px;
+    margin-top: 5px;
+}
+
+.bookInput {
+	width: 30%;
+	float: right;
+	margin-right: 62%;
+}
+
+.addbookLabel{
+	margin-left: 5%;
+}
+
+.bookBtn{
+	margin-left: 43%;
+}
+
+.bookBtn .btn{
+	margin-right: 1%;
+}
+
+.loginSubmit .btn-primary{
+	margin-left: 15%;
+}
+
+.loginSubmit .btn-default{
+	margin-left: 5%;
+}
+
+.requestTable{
+	width: 50%;
+	margin-left: 15%;
+}
+
+.requestBookBtn{
+	margin-right: 27%;
+}
+
+.searchOption{
+	margin-left: 75%;
+}
+
+.boxed{
+	border: 1px solid 
+}
+
+.bookLabel{
+	margin-left: 5%;
+}
+
+.bookCheckoutRequest{
+	margin-left: 60%;
+}
+
+.noofBooksLabel{
+	margin-left: 5%;
+    margin-top: 0.5%;
+}
+
+.noofBooksText{
+	margin-right: 81%;
+    width: 3%;
+    float: right;
+}
+
+..messages {
+  font-size: smaller;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: red;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="app">
+	<head>
+		<title>Library Management System</title>
+		<link rel="stylesheet" href="resources/content/bootstrap.min.css"/>
+   		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+   		<link data-require="font-awesome@*" data-semver="4.0.3" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+		<link href="resources/style/style.css" rel="stylesheet" />	
+		<script src="resources/scripts/jquery-1.9.1.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+		<script src="resources/scripts/angular-ui-router.min.js"></script>
+		<script src="resources/scripts/ui-bootstrap-tpls.min.js"></script>
+		<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    	<script src="resources/controller/app.js"></script>
+    	<script src="resources/controller/controller.js"></script>
+    	<script src="resources/controller/service.js"></script>
+    	<script src="resources/controller/filter.js"></script>
+    	<script src="resources/controller/directive.js"></script>
+	</head>
+	<body class="container" ng-controller="indexController" style="width: 100%;">
+		<br>
+		<div >
+			<nav class="navbar navbar-inverse index-nav">
+			  	<div class="container-fluid">
+			   		<div class="menu">
+			   			<ul class="pull-left logo">
+			   				<li><img src="resources/images/logo.PNG" alt=""></li>
+			   			</ul>
+			      		<ul ng-hide="authenticate"  ng-if ="!(type == 3)"  class="nav navbar-nav allLink">
+			        		<li class="linklist"><a ui-sref = "home" class="linka">Home</a></li>
+			        		<!-- <li class="linklist"><a ui-sref = "bookDepot" class="linka">Book Depot</a></li> -->
+			      		</ul>
+			      		<ul ng-show="authenticate"  ng-if ="!(type == 3)"  class="nav navbar-nav allLink">
+			        		<li class="linklist"><a ui-sref = "home" class="linka">Home</a></li>
+			        		<li class="linklist"><a ui-sref = "bookDepot" class="linka">Book Depot</a></li>
+			      		</ul>
+			      		<ul ng-if ="type == 3" class="nav navbar-nav allLink">
+			        		<li class="linklist"><a ui-sref = "home" class="linka">Home</a></li>
+			        		<li class="linklist"><a ui-sref = "bookDepot" class="linka">Book Depot</a></li>
+			        		<li class="linklist"><a ui-sref = "addBook" class="linka">Add Book</a></li>
+			        		<li class="linklist"><a ui-sref = "checkout" class="linka">Checkout Book</a></li>
+			        		<li class="linklist"><a ui-sref = "bookWithStudent" class="linka">Books with Student</a></li>
+			        		<li class="linklist"><a ui-sref = "studentReturnBook" class="linka">Return book</a></li>
+			        		<li class="linklist"><a ui-sref = "studentPenalty" class="linka">Penalty List</a></li>
+			        		
+			      		</ul>
+			      		<ul ng-show="!authenticate" class="nav navbar-nav navbar-right" >
+			        		<li><a class="registera" ng-click="signin()"><span class="glyphicon"></span>Login / Register</a></li>
+			      		</ul>
+			      		<ul ng-show="authenticate" class="nav navbar-nav navbar-right">
+			      			<li class="username">Hi  {{userName}}</li>
+			        		<li><a class="registera" ng-click="logout()"><span class="glyphicon"></span> Log Out</a></li>
+			        		<li><a class="registera" ng-click="editInformation()"><span class="glyphicon"></span>Edit Users Information</a></li>
+			      		</ul>
+			    	</div>
+				</div>
+				<div ng-show="authenticate" ng-if ="(type == 1)" class="form-group pull-right submitbtn" >
+					<input type="submit" class="btn btn-primary" value="Request Book" ng-click="requestBook()">
+				</div>
+				<div ng-show="authenticate" ng-if ="(type == 2)" class="form-group pull-right submitbtn" >
+					<input type="submit" class="btn btn-primary" value="Checkout Book" ng-click="checkoutBookForTeacher()">
+				</div>
+			</nav>
+			<div>
+				<img class="banner" src="resources/images/banner1.PNG" alt="">
+			</div>
+		</div>
+		<div>
+	     	<br>
+		   	<div ui-view></div>
+	   	</div>
+	</body>
+</html>

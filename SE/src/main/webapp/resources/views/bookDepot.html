@@ -1,0 +1,25 @@
+<div class="bookDepotClass">
+	<div>
+		<nav class="navbar-form searchOption">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search" ng-model="bookName">
+			</div>
+			<button type="submit" class="btn btn-default" ng-click = "searchBook()">Submit</button>
+		</nav>
+	</div>
+	<div class="boxed">
+		<br>
+		<section>
+			
+			<br>
+			<div>
+				<label for="bookName" class="bookLabel">Book Name:	{{book.bookName}}</label><br>
+				<label for="isbn" class="bookLabel">Book ISBN:	{{book.isbn}}</label><br>
+				<label for="available" class="bookLabel">Availability:	{{book.noOfBooks}}</label>
+			</div>
+			<br>
+			<button type="submit" class="btn btn-primary bookCheckoutRequest" ng-click = "checkout()">Checkout</button>
+		</section>
+		<br>
+	</div>
+</div>

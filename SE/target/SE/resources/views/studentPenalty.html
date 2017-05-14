@@ -1,0 +1,20 @@
+<div>
+	<h1>List of Student with Penalty</h1>
+	<br>
+	<div class ="requestTable">
+		<table border="1" class="table table-hover table-bordered table-striped timing-table">
+		    <thead>
+		        <tr>
+		            <th>Student Name</th>
+		            <th>Penalty</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		    	<tr ng-repeat="book in studentPenalty track by $index">
+	    			<td>{{book.studentEmail}}</td>
+	    			<td>{{book.penalty}}</td>
+	    		</tr>
+		    </tbody>
+		</table>
+	</div>
+</div>
