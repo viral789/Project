@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>project</display-name>
+  <welcome-file-list>
+  	<welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <param-name>host</param-name>
+    <param-value>smtp.gmail.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>port</param-name>
+    <param-value>587</param-value>
+  </context-param>
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>projectfall510@gmail.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pass</param-name>
+    <param-value>Project@2016</param-value>
+  </context-param>
+  
+  <servlet>
+        <servlet-name>AutoComplete</servlet-name>
+        <servlet-class>AutoComplete</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AutoComplete</servlet-name>
+        <url-pattern>/AutoComplete</url-pattern>
+    </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>HotelPageServlet</servlet-name>
+	  <servlet-class>HotelPageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>HotelPageServlet</servlet-name>
+      <url-pattern>/HotelPageServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>BookHotelServlet</servlet-name>
+	  <servlet-class>BookHotelServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>BookHotelServlet</servlet-name>
+      <url-pattern>/BookHotelServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>OrderServlet</servlet-name>
+	  <servlet-class>OrderServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>OrderServlet</servlet-name>
+      <url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ViewReservation</servlet-name>
+	  <servlet-class>ViewReservation</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>ViewReservation</servlet-name>
+      <url-pattern>/ViewReservation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>CancelReservation</servlet-name>
+	  <servlet-class>CancelReservation</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>CancelReservation</servlet-name>
+      <url-pattern>/CancelReservation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>UpdateReservation</servlet-name>
+	  <servlet-class>UpdateReservation</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>UpdateReservation</servlet-name>
+      <url-pattern>/UpdateReservation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>UpdateReservationServlet</servlet-name>
+	  <servlet-class>UpdateReservationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>UpdateReservationServlet</servlet-name>
+      <url-pattern>/UpdateReservationServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ViewReview</servlet-name>
+	  <servlet-class>ViewReview</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>ViewReview</servlet-name>
+      <url-pattern>/ViewReview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>SubmitReview</servlet-name>
+	  <servlet-class>SubmitReview</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>SubmitReview</servlet-name>
+      <url-pattern>/SubmitReview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ReviewServlet</servlet-name>
+	  <servlet-class>ReviewServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>ReviewServlet</servlet-name>
+      <url-pattern>/ReviewServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>AddHotel</servlet-name>
+	  <servlet-class>AddHotel</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>AddHotel</servlet-name>
+      <url-pattern>/AddHotel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>UpdateHotel</servlet-name>
+	  <servlet-class>UpdateHotel</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>UpdateHotel</servlet-name>
+      <url-pattern>/UpdateHotel</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+	  <servlet-name>UpdateHotelServlet</servlet-name>
+	  <servlet-class>UpdateHotelServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>UpdateHotelServlet</servlet-name>
+      <url-pattern>/UpdateHotelServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>SaveHotel</servlet-name>
+	  <servlet-class>SaveHotel</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>SaveHotel</servlet-name>
+      <url-pattern>/SaveHotel</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+	  <servlet-name>hotelsaxparser2</servlet-name>
+	  <servlet-class>hotelsaxparser2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>hotelsaxparser2</servlet-name>
+      <url-pattern>/hotelsaxparser2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>LogoutServlet</servlet-name>
+	  <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>LogoutServlet</servlet-name>
+      <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>LoginServlet</servlet-name>
+	  <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>LoginServlet</servlet-name>
+      <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>RegistrationServlet</servlet-name>
+	  <servlet-class>RegistrationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>RegistrationServlet</servlet-name>
+      <url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ForgetPasswordServlet</servlet-name>
+	  <servlet-class>ForgetPasswordServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>ForgetPasswordServlet</servlet-name>
+      <url-pattern>/ForgetPasswordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>Charts</servlet-name>
+	  <servlet-class>Charts</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>Charts</servlet-name>
+      <url-pattern>/Charts</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>TrendingServlet</servlet-name>
+	  <servlet-class>TrendingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>TrendingServlet</servlet-name>
+      <url-pattern>/TrendingServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>SaleViewReservation</servlet-name>
+	  <servlet-class>SaleViewReservation</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>SaleViewReservation</servlet-name>
+      <url-pattern>/SaleViewReservation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ViewHotel</servlet-name>
+	  <servlet-class>ViewHotel</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>ViewHotel</servlet-name>
+      <url-pattern>/ViewHotel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>SendOrderCompleteEmail</servlet-name>
+	  <servlet-class>SendOrderCompleteEmail</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>SendOrderCompleteEmail</servlet-name>
+      <url-pattern>/SendOrderCompleteEmail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>EmailUtility</servlet-name>
+	  <servlet-class>EmailUtility</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>EmailUtility</servlet-name>
+      <url-pattern>/EmailUtility</url-pattern>
+  </servlet-mapping>
+</web-app>

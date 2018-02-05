@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels>
+    <Hotel id="01">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Grand Chicago</name>
+        <room>Standard Single</room>
+        <price>1000</price>
+        <city>Chicago</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="02">
+        <image>images/slider1.jsp</image>
+        <name>Hyatt Regency Chicago</name>
+        <room>Standard Single</room>
+        <price>1500</price>
+        <city>Chicago</city>
+        <quantity>200</quantity>  
+    </Hotel>
+     <Hotel id="03">
+        <image>images/slider1.jsp</image>
+        <name>Chicago's Essex Inn</name>
+        <room>Standard Single</room>
+        <price>500</price>
+        <city>Chicago</city>
+        <quantity>100</quantity>  
+    </Hotel>
+     <Hotel id="04">
+        <image>images/slider1.jsp</image>
+        <name>The Willows</name>
+        <room>Standard Single</room>
+        <price>700</price>
+        <city>Chicago</city>
+        <quantity>222</quantity>  
+    </Hotel>
+     <Hotel id="05">
+        <image>images/slider1.jsp</image>
+        <name>W New York - Union Square</name>
+        <room>Standard Single</room>
+        <price>600</price>
+        <city>NewYork</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="06">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Pennsylvania</name>
+        <room>Standard Single</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>20</quantity>  
+    </Hotel>
+     <Hotel id="07">
+        <image>images/slider1.jsp</image>
+        <name>50 Bowery</name>
+        <room>Standard Single</room>
+        <price>300</price>
+        <city>NewYork</city>
+        <quantity>50</quantity>  
+    </Hotel>
+     <Hotel id="08">
+        <image>images/slider1.jsp</image>
+        <name>The Roxy Hotel</name>
+        <room>Standard Single</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>55</quantity>  
+    </Hotel>
+     <Hotel id="09">
+        <image>images/slider1.jsp</image>
+        <name>The Mosser</name>
+        <room>Standard Single</room>
+        <price>800</price>
+        <city>San Francisco</city>
+        <quantity>26</quantity>  
+    </Hotel>
+     <Hotel id="10">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Nikko San Francisco</name>
+        <room>Standard Single</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="11">
+        <image>images/slider1.jsp</image>
+        <name>Beresford</name>
+        <room>Standard Single</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>40</quantity>  
+    </Hotel>
+     <Hotel id="12">
+        <image>images/slider1.jsp</image>
+        <name>Kensington Park</name>
+        <room>Standard Single</room>
+        <price>600</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="13">
+        <image>images/slider1.jsp</image>
+        <name>Radisson Hotel</name>
+        <room>Standard Single</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>24</quantity>  
+    </Hotel>
+     <Hotel id="14">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Gateway</name>
+        <room>Standard Single</room>
+        <price>400</price>
+        <city>LA</city>
+        <quantity>34</quantity>  
+    </Hotel>
+     <Hotel id="15">
+        <image>images/slider1.jsp</image>
+        <name>Mr C Beverly Hills</name>
+        <room>Standard Single</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>76</quantity>  
+    </Hotel>
+    
+    <Hotel id="16">
+        <image>images/slider1.jsp</image>
+        <name>Hollywood Hotel</name>
+        <room>Standard Single</room>
+        <price>900</price>
+        <city>LA</city>
+        <quantity>200</quantity>  
+    </Hotel>
+    
+    <Hotel id="17">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Grand Chicago</name>
+        <room>Suite</room>
+        <price>1000</price>
+        <city>Chicago</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="18">
+        <image>images/slider1.jsp</image>
+        <name>Hyatt Regency Chicago</name>
+        <room>Suite</room>
+        <price>1500</price>
+        <city>Chicago</city>
+        <quantity>200</quantity>  
+    </Hotel>
+     <Hotel id="19">
+        <image>images/slider1.jsp</image>
+        <name>Chicago's Essex Inn</name>
+        <room>Suite</room>
+        <price>500</price>
+        <city>Chicago</city>
+        <quantity>100</quantity>  
+    </Hotel>
+     <Hotel id="20">
+        <image>images/slider1.jsp</image>
+        <name>The Willows</name>
+        <room>Suite</room>
+        <price>700</price>
+        <city>Chicago</city>
+        <quantity>222</quantity>  
+    </Hotel>
+     <Hotel id="21">
+        <image>images/slider1.jsp</image>
+        <name>W New York - Union Square</name>
+        <room>Suite</room>
+        <price>600</price>
+        <city>NewYork</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="22">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Pennsylvania</name>
+        <room>Suite</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>20</quantity>  
+    </Hotel>
+     <Hotel id="23">
+        <image>images/slider1.jsp</image>
+        <name>50 Bowery</name>
+        <room>Suite</room>
+        <price>300</price>
+        <city>NewYork</city>
+        <quantity>50</quantity>  
+    </Hotel>
+     <Hotel id="24">
+        <image>images/slider1.jsp</image>
+        <name>The Roxy Hotel</name>
+        <room>Suite</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>55</quantity>  
+    </Hotel>
+     <Hotel id="25">
+        <image>images/slider1.jsp</image>
+        <name>The Mosser</name>
+        <room>Suite</room>
+        <price>800</price>
+        <city>San Francisco</city>
+        <quantity>26</quantity>  
+    </Hotel>
+     <Hotel id="26">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Nikko San Francisco</name>
+        <room>Suite</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="27">
+        <image>images/slider1.jsp</image>
+        <name>Beresford</name>
+        <room>Suite</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>40</quantity>  
+    </Hotel>
+     <Hotel id="28">
+        <image>images/slider1.jsp</image>
+        <name>Kensington Park</name>
+        <room>Suite</room>
+        <price>600</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="29">
+        <image>images/slider1.jsp</image>
+        <name>Radisson Hotel</name>
+        <room>Suite</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>24</quantity>  
+    </Hotel>
+     <Hotel id="30">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Gateway</name>
+        <room>Suite</room>
+        <price>400</price>
+        <city>LA</city>
+        <quantity>34</quantity>  
+    </Hotel>
+     <Hotel id="31">
+        <image>images/slider1.jsp</image>
+        <name>Mr C Beverly Hills</name>
+        <room>Suite</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>76</quantity>  
+    </Hotel>
+    
+    <Hotel id="32">
+        <image>images/slider1.jsp</image>
+        <name>Hollywood Hotel</name>
+        <room>Suite</room>
+        <price>900</price>
+        <city>LA</city>
+        <quantity>200</quantity>  
+    </Hotel>
+    
+    <Hotel id="33">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Grand Chicago</name>
+        <room>Single</room>
+        <price>1000</price>
+        <city>Chicago</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="34">
+        <image>images/slider1.jsp</image>
+        <name>Hyatt Regency Chicago</name>
+        <room>Single</room>
+        <price>1500</price>
+        <city>Chicago</city>
+        <quantity>200</quantity>  
+    </Hotel>
+     <Hotel id="35">
+        <image>images/slider1.jsp</image>
+        <name>Chicago's Essex Inn</name>
+        <room>Single</room>
+        <price>500</price>
+        <city>Chicago</city>
+        <quantity>100</quantity>  
+    </Hotel>
+     <Hotel id="36">
+        <image>images/slider1.jsp</image>
+        <name>The Willows</name>
+        <room>Single</room>
+        <price>700</price>
+        <city>Chicago</city>
+        <quantity>222</quantity>  
+    </Hotel>
+     <Hotel id="37">
+        <image>images/slider1.jsp</image>
+        <name>W New York - Union Square</name>
+        <room>Single</room>
+        <price>600</price>
+        <city>NewYork</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="38">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Pennsylvania</name>
+        <room>Single</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>20</quantity>  
+    </Hotel>
+     <Hotel id="39">
+        <image>images/slider1.jsp</image>
+        <name>50 Bowery</name>
+        <room>Single</room>
+        <price>300</price>
+        <city>NewYork</city>
+        <quantity>50</quantity>  
+    </Hotel>
+     <Hotel id="40">
+        <image>images/slider1.jsp</image>
+        <name>The Roxy Hotel</name>
+        <room>Single</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>55</quantity>  
+    </Hotel>
+     <Hotel id="41">
+        <image>images/slider1.jsp</image>
+        <name>The Mosser</name>
+        <room>Single</room>
+        <price>800</price>
+        <city>San Francisco</city>
+        <quantity>26</quantity>  
+    </Hotel>
+     <Hotel id="42">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Nikko San Francisco</name>
+        <room>Single</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="43">
+        <image>images/slider1.jsp</image>
+        <name>Beresford</name>
+        <room>Single</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>40</quantity>  
+    </Hotel>
+     <Hotel id="44">
+        <image>images/slider1.jsp</image>
+        <name>Kensington Park</name>
+        <room>Single</room>
+        <price>600</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="45">
+        <image>images/slider1.jsp</image>
+        <name>Radisson Hotel</name>
+        <room>Single</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>24</quantity>  
+    </Hotel>
+     <Hotel id="46">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Gateway</name>
+        <room>Single</room>
+        <price>400</price>
+        <city>LA</city>
+        <quantity>34</quantity>  
+    </Hotel>
+     <Hotel id="47">
+        <image>images/slider1.jsp</image>
+        <name>Mr C Beverly Hills</name>
+        <room>Single</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>76</quantity>  
+    </Hotel>
+    
+    <Hotel id="48">
+        <image>images/slider1.jsp</image>
+        <name>Hollywood Hotel</name>
+        <room>Single</room>
+        <price>900</price>
+        <city>LA</city>
+        <quantity>200</quantity>  
+    </Hotel>
+    
+    <Hotel id="50">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Grand Chicago</name>
+        <room>Double</room>
+        <price>1000</price>
+        <city>Chicago</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="51">
+        <image>images/slider1.jsp</image>
+        <name>Hyatt Regency Chicago</name>
+        <room>Double</room>
+        <price>1500</price>
+        <city>Chicago</city>
+        <quantity>200</quantity>  
+    </Hotel>
+     <Hotel id="52">
+        <image>images/slider1.jsp</image>
+        <name>Chicago's Essex Inn</name>
+        <room>Double</room>
+        <price>500</price>
+        <city>Chicago</city>
+        <quantity>100</quantity>  
+    </Hotel>
+     <Hotel id="53">
+        <image>images/slider1.jsp</image>
+        <name>The Willows</name>
+        <room>Double</room>
+        <price>700</price>
+        <city>Chicago</city>
+        <quantity>222</quantity>  
+    </Hotel>
+     <Hotel id="54">
+        <image>images/slider1.jsp</image>
+        <name>W New York - Union Square</name>
+        <room>Double</room>
+        <price>600</price>
+        <city>NewYork</city>
+        <quantity>150</quantity>  
+    </Hotel>
+     <Hotel id="55">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Pennsylvania</name>
+        <room>Double</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>20</quantity>  
+    </Hotel>
+     <Hotel id="56">
+        <image>images/slider1.jsp</image>
+        <name>50 Bowery</name>
+        <room>Double</room>
+        <price>300</price>
+        <city>NewYork</city>
+        <quantity>50</quantity>  
+    </Hotel>
+     <Hotel id="57">
+        <image>images/slider1.jsp</image>
+        <name>The Roxy Hotel</name>
+        <room>Double</room>
+        <price>700</price>
+        <city>NewYork</city>
+        <quantity>55</quantity>  
+    </Hotel>
+     <Hotel id="58">
+        <image>images/slider1.jsp</image>
+        <name>The Mosser</name>
+        <room>Double</room>
+        <price>800</price>
+        <city>San Francisco</city>
+        <quantity>26</quantity>  
+    </Hotel>
+     <Hotel id="59">
+        <image>images/slider1.jsp</image>
+        <name>Hotel Nikko San Francisco</name>
+        <room>Double</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="60">
+        <image>images/slider1.jsp</image>
+        <name>Beresford</name>
+        <room>Double</room>
+        <price>400</price>
+        <city>San Francisco</city>
+        <quantity>40</quantity>  
+    </Hotel>
+     <Hotel id="61">
+        <image>images/slider1.jsp</image>
+        <name>Kensington Park</name>
+        <room>Double</room>
+        <price>600</price>
+        <city>San Francisco</city>
+        <quantity>30</quantity>  
+    </Hotel>
+     <Hotel id="62">
+        <image>images/slider1.jsp</image>
+        <name>Radisson Hotel</name>
+        <room>Double</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>24</quantity>  
+    </Hotel>
+     <Hotel id="63">
+        <image>images/slider1.jsp</image>
+        <name>Sheraton Gateway</name>
+        <room>Double</room>
+        <price>400</price>
+        <city>LA</city>
+        <quantity>34</quantity>  
+    </Hotel>
+     <Hotel id="64">
+        <image>images/slider1.jsp</image>
+        <name>Mr C Beverly Hills</name>
+        <room>Double</room>
+        <price>800</price>
+        <city>LA</city>
+        <quantity>76</quantity>  
+    </Hotel>
+    
+    <Hotel id="65">
+        <image>images/slider1.jsp</image>
+        <name>Hollywood Hotel</name>
+        <room>Double</room>
+        <price>900</price>
+        <city>LA</city>
+        <quantity>200</quantity>  
+    </Hotel>
+    
+    
+</Hotels>

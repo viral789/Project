@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hotel Reservation</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/responsiveslides.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		<script src="js/javascript.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			$(function () {
+				$("#slider1").responsiveSlides({
+		        speed: 600
+		      });
+				 $('.input-group .date').datepicker({format: "dd.mm.yyyy"});
+				 $("#datepicker1").datepicker();
+			});
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<div class="header-top">
+					<div class="logo">
+						<!-- <a href="index.html"><img src="images/logo.png" /></a> -->
+					</div>
+					<!--<div class="contact-info">
+						<p class="phone">Call us : <a href="#">800-020-12345</a></p>
+						<p class="gpa">Gpa Help : <a href="#">View map</a></p>
+					</div>-->
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="header-top-nav">
+				<div class="wrap">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="login.html">Sign In</a></li>
+						<li><a href="LogoutServlet">Logout</a></li>
+						<li><a href="ViewReservation">View Reservation</a></li>
+						<li><a href="TrendingServlet">View Trends</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+		<div class="image-slider">
+		    <ul class="rslides" id="slider1">
+		      <li><img src="images/slider3.jpg" alt=""></li>
+		      <li><img src="images/slider1.jpg" alt=""></li>
+		      <li><img src="images/slider3.jpg" alt=""></li>
+		    </ul>
+		</div>
+		<div class="content"> 
+			<div class="wrap">
+				<div class="reservation">
+					<form action="HotelPageServlet">
+						<ul>	
+							<li class="span1_of_1 left">
+								 <h5>City</h5>
+								 <input name="city" class="form-control" type="text">		
+							 </li>
+							 <li class="span1_of_1 left">
+								 <h5>Check in Date</h5>
+								 <div class="checkinDate">
+									 <input name="checkinDate" class="form-control" placeholder="dd/mm/yyyy" type="text">
+									 <!-- <div class="input-group-addon" >
+						             	<span class="glyphicon glyphicon-th"></span>
+						             </div> -->
+								 </div>					
+							 </li>		
+							 <li  class="span1_of_1 left">
+								 <h5>Checkout Date</h5>
+								 <div class="checkoutDate">
+									<input name ="checkoutDate" id="datepicker1" class="form-control"  type="text">
+								 </div>
+							 </li>
+							 <li class="span1_of_1 left">
+								 <h5>Rooms</h5>
+								 <input name="rooms" class="form-control" type="text">		
+							 </li> 
+							 
+							 <li class="span1_of_1">
+								 <h5>Room type</h5>
+							      <select class="form-control" id="country" name="roomType">
+										<option>Standard Single Room</option>
+										<option>Suite room</option>         
+										<option>Single room</option>
+										<option>Double room</option>
+							      </select>
+							 </li>
+							 
+							 <li class="span1_of_3">
+									<div class="date_btn">
+										<input type="submit" class="btn btn-lg btn-default" value="View Hotels" />
+									</div>
+							 </li>
+							 <div class="clearfix"></div>
+						 </ul>
+					</form>
+				</div>
+				<div class="reservation">
+					<form name="autoFillForm" action="AutoComplete">
+			    		<table border="0" cellpadding="5">
+			    			<tbody>
+			    				<tr>
+			    					<td>
+			    						<strong class="FontColor" style="color:white">Search: </strong>
+			    					</td>
+			    					<td>
+			    						<input type="text" size="100" id="complete-field" class="FontColor" onkeyup="doComplete()">
+			    						<img src="images\Search.jpg" >
+			    					</td>
+			    				</tr>
+			    				<tr>
+			    					<td id="auto-row" colspan="2">
+			    						<table id="complete-table" class="popupBox"/>
+			    					</td>
+			    				</tr>
+			    			</tbody>
+			    		</table>
+	    			</form>
+	    		</div>
+			</div>
+			<div class="clear"> </div>
+			<div class="content-box">
+				<div class="wrap">
+					<div class="content-box-left">
+						<div class="content-box-left-topgrid">
+							<h3>Welcome to Grand Hotel Reservation</h3>
+							<p>Whether an apartment for a night, a castle for a week, or a villa for a month, Our team connects people to unique travel experiences, at any price point, in more than 65,000 cities and 191 countries. And with world-class customer service and a growing community of users, Grand Hotel Reservation is the easiest way for people to monetize their extra space and showcase it to an audience of millions.</p>
+							<span>For more information about our Accommodation in Grand Hotel, Call 800-020-12345</span>
+						</div>
+						<div class="content-box-left-bootomgrids">
+							<div class="content-box-left-bootomgrid">
+								<h3>The Deluxe Room</h3>
+								<p>High ceilings and wood finishings define Deluxe Rooms. Each room is stocked with a plentiful supply of luxurious amenities. Each room offers either a city or garden view. A spacious marble bathroom with separate shower and an indulgent bed with duvet.</p>
+								<a href="#"><img src="images/slider1.jpg" title="image-name" /></a>
+							</div>
+							<div class="content-box-left-bootomgrid">
+								<h3>The Luxury Room</h3>
+								<p>A suite in a hotel or other public accommodation denotes, according to most dictionary definitions, connected rooms under one room number. ... In luxury or upscale accommodations, such as Ritz Carlton, InterContinental, Marriott, Embassy Suites, or Homewood Suites by Hilton key features may include multiple rooms.</p>
+								<a href="#"><img src="images/slider2.jpg" title="image-name" /></a>
+							</div>
+							<div class="content-box-left-bootomgrid lastgrid">
+								<h3>The Executive Room</h3>
+								<p>Executive rooms, with a luxurious double bed and seating area, are popular with business travellers and families. Spacious and contemporary, they may accommodate an extra bed or interconnect.</p>
+								<a href="#"><img src="images/slider3.jpg" title="image-name" /></a>
+							</div>
+							<div class="clear"> </div>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="content-box-right">
+						<div class="content-box-right-topgrid">
+							<h3>Todays Specials</h3>
+							<a href="#"><img src="images/slider1.jpg" title="imnage-name" /></a>
+							<h4>Super Discount Offer</h4>
+							<p>Book right now and win 10% discount on your next visit.</p>
+							<a href="#">Read More</a>
+						</div>
+						<div class="content-box-right-bottomgrid">
+							<h3>Upcoming Events</h3>
+							<ul>
+								<li><a href="#">Karaoke Nights</a></li>
+								<li><a href="#">Wine Tasting</a></li>
+								<li><a href="#">Tango</a></li>
+								<li><a href="#">New Years Special</a></li>
+								<li><a href="#">Christmas Week</a></li>
+								<li><a href="#">Magic shows</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<div class="clear"> </div>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Hotel Reservation</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/responsiveslides.css">
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			$(function () {
+				$("#slider1").responsiveSlides({
+		        speed: 600
+		      });
+			});
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<div class="header-top">
+					<div class="logo">
+						<!-- <a href="index.html"><img src="images/logo.png" /></a> -->
+					</div>
+					<!--<div class="contact-info">
+						<p class="phone">Call us : <a href="#">800-020-12345</a></p>
+						<p class="gpa">Gpa Help : <a href="#">View map</a></p>
+					</div>-->
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="header-top-nav">
+				<div class="wrap">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="login.html">Sign In</a></li>
+						<li><a href="LogoutServlet">Logout</a></li>
+						<li><a href="ViewReservation">View Reservation</a></li>
+						<li><a href="TrendingServlet">View Trends</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content"> 
+			<form action="LoginJsp.jsp">
+				<div class="modal fade" id="myModal" role="dialog">
+			    	<div class="modal-dialog">
+			    		<div class="modal-content">
+        					<div class="modal-header">
+          						<button type="button" class="close" data-dismiss="modal">&times;</button>
+          						<h1 class="modal-title" style="text-align:center">Login/Register</h1>
+       						 </div>
+	        				<div class="modal-body">
+								<div class="loginmodal-container">
+									<h1>Login to Your Account</h1><br>
+								  <!-- 	<form> -->
+										<input type="text" name="email" placeholder="emailId">
+										<input type="password" name="password" placeholder="Password">
+										<select class="form-control" name="role">
+											<option>customer</option>
+											<option>salesman</option>
+											<option>storemanager</option>
+										</select>
+										<br>
+									
+										<input type="submit" name="login" class="btn btn-lg btn-primary btn-block login loginmodal-submit" value="Login">
+									<!--  </form> -->
+								</div>
+							</div>
+	        				<div class="modal-footer">
+	        					<div class="login-help">
+									<a href="Registration.html">Register</a>  -
+									<a href="Forget.html">Forgot Password</a>
+								</div>
+	        				</div>
+	      				</div>
+    				</div>
+  				</div>
+  			</form>
