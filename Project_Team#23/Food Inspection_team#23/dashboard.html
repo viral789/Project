@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Food Inspection Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style/css.css">
+	<script src="controller/dataframe.js"></script>
+	<script src="controller/windowSize.js"></script>
+	<script>
+		var DataFrame = dfjs.DataFrame; 
+	</script>
+	<script src="controller/dataSet.js"></script>
+	<script src="controller/Chart.js"></script>
+	<script src="controller/colorGenerator.js"></script>
+	<script src="controller/optionContent.js"></script>
+	<script src="controller/myChart.js"></script>
+	<script src="controller/lineChart.js"></script>
+	<script src="controller/barChart.js"></script>
+	<script src="controller/pieChart.js"></script>
+	<script src="controller/pivotChart.js"></script>
+	<script src="controller/stackedChart.js"></script>
+	<script src="controller/chartFactory.js"></script>
+	<script src="controller/dashBoard.js"></script>
+	</head>
+	<body>
+		<h1 align="center" style="font-size: 3em">Food Inspection Dashboard</h1>
+		<div class="menu-wrap">
+		   <nav class="menu">
+		   	  <ul class="clearfix">
+		   		<li>
+	               <a href="#">Datasets <span class="arrow">&#9660;</span></a>
+	               <ul class="sub-menu">
+	               	   <li><a href="dashboard.html?dataSetId=1">New York Restaurant Food Inspection</a></li>
+	               	   <li><a href="dashboard.html?dataSetId=2">Chicago Restaurant Food Inspection</a></li>
+	                   <li><a href="dashboard.html?dataSetId=3">Los Angeles Restaurant Food Inspection </a></li>
+	                   <li><a href="dashboard.html?dataSetId=4">Seattle Restaurant Food Inspection</a></li>
+	                   <li><a href="dashboard.html?dataSetId=5">San Francisco Restaurant Food Inspection</a></li>
+	               </ul>
+		        </li>
+		        <li>
+		           	<a href="#">Filter <span class="arrow">&#9660;</span> </a>
+		           	<ul class="sub-menu">
+		            	<li><a href="#" id=columnFilter" onclick="displaySideBar('columnFilter')">Column Filter</a></li>
+		                <li><a href="#" id="rowFilter" onclick="displaySideBar('rowFilter')" >Row Filter</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="#" id="visualize" onclick="displaySideBar('visualize')">Visualize</a></li>
+			   <li><a href="#" onclick="displaySideBar('stats')">Stats</a></li>
+			   <li><a href="#">Export Dataset <span class="arrow">&#9660;</span></a>
+					<ul class="sub-menu">
+		            	<li><a href="#" id="CSVExport" onclick="exportDataset('csv')" >Export in CSV format</a></li>
+		               	<li><a href="#" id="JSONExport" onclick="exportDataset('json')">Export in JSON format</a></li>
+		            </ul>
+				</li>
+		      </ul>
+		   </nav> 
+		</div>
+		<div class="outer-table" style=" margin-top: 2%">
+			<div class = "inner-table" style="height: 388px; width : 100%;" id="inner-table">
+				<div class="fullHeight renderTypeNode chartRenderType" data-rendertype="chart" aria-label="Building Violations (table)" style="height:388px;display:none" id="chartRenderContent">
+					<div class="divider">
+						<a href="#Hide" class="close" title="Hide section" onclick="hideChartContent()">
+							<span class="icon"></span>
+						</a>
+					</div>
+					<div class="renderContent fullHeight scrollContent data-table" id="blist-t1" style="height: 500px; cursor: auto;" id="blist-t1"> 
+						<div style="height: 100%; position: relative; overflow-y: auto;" class="visualizationArea" id="renderTypeContainer">
+							<div class="mondrian orientationRight smallMode hasNoLegend">	
+								<div class="chartOuterContainer" style="margin-left: 0px;" id="chartOuterContainer">
+									<div class="chartContainer" style="overflow-x: auto; margin-bottom: -114px;height:100%;width:100%;position : relative;overflow-y:auto;" id="chartContainer">
+										<canvas id="chartCanvas" width="9000" height="450">	
+										</canvas>
+									</div>
+								</div>	
+							</div>
+						</div>	
+					</div>
+				</div>
+			
+				<div class="fullHeight renderTypeNode gridRenderType" data-rendertype="table" aria-label="Building Violations (table)" style="height:388px;" id="dataRenderContent">
+					<div class="renderContent fullHeight scrollContent data-table" id="blist-t1" style="height: 388px; cursor: auto;" id="blist-t1"> 
+						<div class="table-top">
+							<div class="table-header-scroll" style="height: 37px;">
+								<div class="table-header-fix" style="width: 5336px; left: 0px;" id="parent-header">	
+								</div>
+							</div>	
+						</div>
+						 <div class="data-table-scrolls" style="height: 475px; width: 100%;" onscroll="scrollHeader()" id="d1">
+						 	<div class="data-table-inside" style="width: 5200px; height: 33000px;top:0px;" id="data-inside">
+						 		<div class="data-table-render" id="parent-data" style="height: 33000px;">
+						 			
+						 		</div>
+						 	</div>
+						 </div>
+					</div>	
+				</div>
+			</div>
+			<div id="gridSidebar" style="display:none; height: 500px; right: 0px;margin: 0px;padding: 0px;" class="position-right ui-resizable" aria-live="polite"> <!-- 500 -->
+				<a class="close" href="#close"><span class="icon" onclick="hideSidebar()">Close</span></a>
+				<div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div>
+				<div id="gridSidebar_outer_manage" class="outerPane" style="display: block;margin: 0px;padding: 0px;">
+					<div class="paneOverlay hide"></div>
+					<div class="mainTitleBlock">
+						<span class="title" id="contentTitle">Manage</span>
+					</div>
+					<div class="panes" style="height: 450px;" id="panes"> <!-- 450 || 525 -->
+						<a href="#Show &amp; Hide Columns" class="headerLink showHide selected" data-title="Adjust which columns are visible in this view" data-panename="showHide" title="">
+							<span class="title" id="contentSubTitle">Show &amp; Hide Columns</span>
+						</a>
+						<div id="controlPane" class="controlPane showHide" style="display: block;">
+							<form class="commonForm" novalidate="novalidate" id="columnShowHideForm">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>

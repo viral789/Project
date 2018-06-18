@@ -1,0 +1,731 @@
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta'), local('EkMukta-Regular'), url(http://fonts.gstatic.com/s/ekmukta/v7/FweTTEF9SPcBdXv6EK0ziRTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta'), local('EkMukta-Regular'), url(http://fonts.gstatic.com/s/ekmukta/v7/7JltmOcx0x46ReRfiIAB_hTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta'), local('EkMukta-Regular'), url(http://fonts.gstatic.com/s/ekmukta/v7/bd9w3t1zRrt_-4XQNqfNJPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+		font-family:'Ek Mukta';
+	}
+	.data-table {
+		height : 100%;
+		position : relative;
+		/* overflow : hidden; */  
+	}
+	.data-table-locked {
+		left: 0;
+    	position: absolute;
+    	z-index: -1;
+	}
+	.data-table-render {
+		left: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	}
+	.data-table-scrolls {
+		position: relative;
+    	overflow-y: scroll;
+    	overflow-x: scroll;
+	}
+	.data-table-inside {
+		background-color: #ffffff;
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: 0;
+	}
+	.table-top {
+		position : relative;
+	}
+	.table-header-scroll {
+		position : relative;
+		overflow : hidden;
+		background : #e8e8e8;
+	}
+	.table-header-fix {
+		height : 2.1em;
+		position : absolute;
+		z-index : 1;
+		top : 0;
+	}
+	.data-th {
+		border-left : solid 1px #e2e2e2;
+		overflow : hidden;
+		height : 2.1em;
+		float : left;
+		padding : 0.3333em;
+		position : relative;
+	}
+	div.data-th-first {
+		padding-left : 0.5em;
+		border-left : none;
+	}
+	.data-th .data-container {
+		font-size: 0.8em;
+	    height: 1.6667em;
+    	left: 12px;
+	    line-height: 1;
+    	overflow: hidden;
+	    position: absolute;
+    	text-overflow: ellipsis;
+	    top: 3px;
+	    padding-top : 4px;
+    	width: auto;
+	}
+	.data-th .data-name-combine {
+		height: 1.6667em;
+	    background-color: #e8e8e8;
+    	padding-right: 5px;
+	}
+	.data-th .data-th-name {
+		position : relative;
+		top : 3px;
+		font-size : 1.2em;
+		
+	}
+	.data-t1-c1 {
+		width : 95px;
+	}
+	.data-t1-c2 {
+		width : 291px;
+	}
+	.data-t1-c3 {
+		width : 187px;
+	}
+	.data-t1-c4 {
+		width : 204px;
+	}
+	.data-t1-c5 {
+		width : 203px;
+	}
+	.data-t1-c6 {
+		width : 240px;
+	}
+	.data-t1-c7 {
+		width : 352px;
+	}
+	.data-t1-c8 {
+		width : 316px;
+	}
+	.data-t1-c9 {
+		width : 436px;
+	}
+	.data-t1-c10 {
+		width : 328px;
+	}
+	.data-t1-c11 {
+		width : 171px;
+	}
+	.data-t1-c12 {
+		width : 218px;
+	}
+	.data-t1-c13 {
+		width : 210px;
+	}
+	.data-t1-c14 {
+		width : 210px;
+	}
+	.data-t1-c15 {
+		width : 234px;
+	}
+	.data-t1-c16 {
+		width : 229px;
+	}
+	.data-t1-c17 {
+		width : 184px;
+	}
+	.data-t1-c18 {
+		width : 193px;
+	}
+	.data-t1-c19 {
+		width : 130px;
+	}
+	.data-t1-c20 {
+		width : 196px;
+	}
+	.data-t1-c21 {
+		width : 318px;
+	}
+	.data-t1-c22 {
+		width : 210px;
+	}
+	.outer-table {
+		background-color: white;
+	    border: 1px solid #cecece;
+	    border-left: 0;
+	    border-right: 0;
+	    position: relative;
+	}
+	.inner-table {
+		/* overflow : hidden; */
+		position : relative;
+	}
+	.renderTypeNode .renderContent {
+		position : relative;
+	}
+	.table-locked-scrolls {
+		background-color: #ffffff;
+		left: 0;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 0;
+	    z-index: 21;
+	}
+	.table-inside {
+		background-color: #ffffff;
+	}
+	.table-render {
+		left: 0;
+    	position: absolute;
+	    top: 0;
+    	width: 100%;
+	}
+	.data-tr {
+    	position: relative;
+	    overflow: hidden;
+    	z-index: 0;
+	}
+	#data-t1 .table-inside .data-tr {
+    	left: 73px;
+	}
+	#data-t1 .data-tr {
+    	height: 25px;
+	}
+	.data-td.align-right {
+ 	   text-align: right;
+	}
+	.data-td.align-left {
+ 	   text-align: left;
+	}
+	.data-td {
+		height: 1.3333em;
+		font-size: 1.0em;
+		border-bottom: solid 1px #d0d0d0;
+	    border-left: solid 1px #e2e2e2;
+	    line-height: 1.3333em;
+    	padding: 0.3333em;
+    	position: relative;
+    	float: left;
+   		overflow: hidden;
+    	white-space: nowrap;
+    	-moz-user-select: none;
+	    -khtml-user-select: none;
+    	user-select: none;
+    	cursor: default;
+	}
+	
+	#mainTitle {
+	color: #FFFFFF;
+    font-size: 1.3em;
+    font-weight: normal;
+    left: 5em;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 0.75em;
+}
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    /* width:100%;
+     box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+     background:#3e3436; 
+    position : relative; */
+    
+    background-color: #3e3436;
+    /* background-color: #ffffff; */
+    border-top: 1px solid #cecece;
+    min-height: 7em;
+    position: relative;
+}
+ 
+.menu {
+	position : absolute;
+    width:100%;
+    margin-top : 9px;
+    /* margin-left: 300px; */
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#be5b70;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:25px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 55px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:21;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:20px;
+}
+ 
+.sub-menu li a {
+    padding:5px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+
+
+/* DESIGN MENU RIGHT  */
+
+#gridSidebar.position-right {
+    border-left-width: 1px;
+}
+
+#gridSidebar {
+    background-color: #f7f7f7;
+    border: 0 solid #cecece;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 22em;
+}
+.ui-resizable {
+    position: relative;
+}
+
+#gridSidebar .close {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 1;
+}
+button.button, input.button, a.button {
+    /* background: -moz-linear-gradient(0 0 270deg, #fefefe, #f2f2f2); */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f2f2f2));
+    background-color: #fefefe;
+    border: 1px solid #999;
+    /* border-radius: .2em;
+    -moz-border-radius: .2em; */
+    -webkit-border-radius: .2em;
+    /* color: #666; */
+    cursor: pointer;
+    /* font-size: 1em; */
+    /* height: 14px; */
+    line-height: 14px;
+    /* padding: 0.3em 0.7em; */
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: auto;
+    /* line-height: auto; */
+    margin: 0.3em;
+    padding: 0.5em 1em;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
+    white-space: nowrap;
+}
+a:visited {
+    color: #c60;
+}
+a {
+    color: #c60;
+    text-decoration: none;
+}
+
+#gridSidebar .ui-resizable-w {
+    left: 0;
+    width: 4px;
+}
+.ui-resizable-w {
+    cursor: w-resize;
+    width: 7px;
+    left: -5px;
+    top: 0;
+    height: 100%;
+}
+.ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    z-index: 99999;
+    display: block;
+}
+
+#gridSidebar .paneOverlay {
+    background-color: #cccccc;
+    height: 100%;
+    left: 0;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 60;
+}
+.hide {
+    display: none !important;
+}
+#gridSidebar .outerPane #gridSidebar_outer_manage .mainTitleBlock {
+    background-color: #855318;
+}
+#gridSidebar .outerPane .mainTitleBlock {
+    padding: 0em 0.5em;
+}
+#gridSidebar .outerPane .mainTitleBlock {
+    background-color: #989898;
+}
+#gridSidebar .outerPane .mainTitleBlock .title {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-transform: none;
+    font-family: Calibri, sans-serif;
+}
+h3 {
+    font-size: 1.4em;
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+#gridSidebar .outerPane .panes {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#gridSidebar .outerPane#gridSidebar_outer_manage .headerLink.selected {
+    background-color: #855318;
+}
+#gridSidebar .outerPane#gridSidebar_outer_manage .headerLink {
+    background-color: #efcda5;
+    border-color: #c17823;
+}
+#gridSidebar .outerPane .headerLink.selected {
+    border: none;
+    color: #ffffff;
+    cursor: default;
+    margin-bottom: 0;
+}
+#gridSidebar .outerPane .headerLink.selected {
+    background-color: #989898;
+}
+#gridSidebar .outerPane .headerLink {
+    border: 1px solid;
+    border-left: 0;
+    border-right: 0;
+    color: #333333;
+    display: block;
+    font-size: 1.1em;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    padding: 0.5em 4.6em;
+}
+#gridSidebar .outerPane .headerLink {
+    background-color: #e0e0e0;
+    border-color: #adadad;
+}
+#gridSidebar .outerPane .headerLink.expanded .icon, #gridSidebar .outerPane .headerLink.selected .icon {
+    background-position: 0 0;
+}
+#gridSidebar .outerPane .headerLink .icon {
+    float: right;
+}
+#gridSidebar .outerPane .headerLink .icon {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: left;
+    text-indent: -9999px;
+    background-image: url(/stylesheets/images/icons/accordion_icons.png?2);
+    height: 13px;
+    width: 13px;
+}
+.controlPane {
+    position: relative;
+    min-height: 15em;
+    /* padding-top: 0.5em; */
+}
+.controlPane .subtitleBlock, .controlPane .readOnlyBlock {
+    padding: 1em;
+}
+controlPane .subtitleBlock .subtitle, .controlPane .readOnlyBlock .subtitle {
+    color: #666;
+}
+.controlPane .subtitleBlock .subtitle, .controlPane .subtitleBlock .readOnlyMessage, .controlPane .readOnlyBlock .subtitle, .controlPane .readOnlyBlock .readOnlyMessage {
+    font-size: 1.3em;
+}
+form p {
+    font-size: 1em;
+    line-height: 1em;
+}
+.controlPane .subtitleBlock, .controlPane .readOnlyBlock {
+    padding: 1em;
+}
+.hide {
+    display: none !important;
+}
+controlPane .subtitleBlock .readOnlyMessage, .controlPane .readOnlyBlock .readOnlyMessage {
+    font-weight: bold;
+}
+.controlPane .subtitleBlock .subtitle, .controlPane .subtitleBlock .readOnlyMessage, .controlPane .readOnlyBlock .subtitle, .controlPane .readOnlyBlock .readOnlyMessage {
+    font-size: 1.3em;
+}
+.controlPane .paneContent {
+    padding: 0.75em;
+    position: relative;
+}
+.controlPane .formSection {
+    margin-bottom: 1em;
+    padding: 0;
+    clear: both;
+}
+controlPane .formSection .formHeader {
+    color: #666;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    margin-left: 0;
+    padding-left: 0;
+}
+.controlPane .formSection.custom>.sectionContent {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.controlPane .formSection .sectionContent {
+    background-color: #fff;
+    border: 1px solid #cecece;
+    border-radius: .3em;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    margin-top: 0.3em;
+    padding: 1px;
+    padding-bottom: 0.3em;
+}
+ol, ul {
+    list-style: none;
+}
+.controlPane.showHide .columnItem {
+    line-height: 1.5833em;
+}
+.controlPane.showHide .columnItem .checker.uniform {
+    margin-right: 2px;
+}
+div.uniform.checker {
+    display: inline-block;
+    height: 19px;
+    position: relative;
+    vertical-align: bottom;
+    width: 19px;
+}
+div.uniform.checker span.checked {
+    background-position: -76px -260px;
+}
+div.uniform.checker span {
+    background-position: 0px -260px;
+    display: block;
+    float: left;
+    height: 19px;
+    text-align: center;
+    width: 19px;
+}
+element.style {
+    opacity: 0;
+}
+div.uniform.checker input {
+    display: inline-block;
+    height: 19px;
+    opacity: 0;
+    width: 19px;
+}
+div.uniform.selector *, div.uniform.radio *, div.uniform.checker *, div.uniform.uploader * {
+    margin: 0;
+    padding: 0;
+}
+input[type="checkbox" i] {
+    margin: 3px 3px 3px 4px;
+}
+input[type="checkbox" i] {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+}
+.controlPane.showHide .columnItem label {
+    padding-left: 0;
+}
+.commonForm label {
+    /* font-size: 1.2em; */
+    font-family: Calibri, sans-serif;
+}
+.commonForm .finishButtons li {
+    float: left;
+    display: list-item;
+}
+#gridSidebar .close.close .icon, #gridSidebar .close.jqmClose .icon, #gridSidebar .close.cancel .icon, #gridSidebar .close.delete .icon {
+    background-position: 0 -50px;
+}
+#gridSidebar .close .icon {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: left;
+    text-indent: -9999px;
+    background-image: url(../images/button_icons.png?1);
+    height: 10px;
+    width: 10px;
+}
+
+.filterConditions .filterCondition .filterRemoveButton.close .icon, .controlPane.unifiedFilter .filterConditions .filterCondition .filterRemoveButton.remove .icon, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .filterRemoveButton.close .icon, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .filterRemoveButton.remove .icon {
+    background-position: 0 -507px;
+}
+.filterCondition .filterRemoveButton .icon, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .filterRemoveButton .icon {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: left;
+    text-indent: -9999px;
+    background-image: url(../images/button_icons.png?3);
+    height: 13px;
+    width: 13px;
+}
+
+ .filterConditions .filterCondition, .controlPane.unifiedFilter .baseFilterConditions .filterCondition {
+    margin-top: 0.5em;
+    padding: 0.7em;
+    position: relative;
+}	
+ .filterConditions .filterCondition .filterRemoveButton, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .filterRemoveButton {
+    opacity: .2;
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
+}
+
+.filterConditions .filterCondition .filterRemoveButton.close .icon, .controlPane.unifiedFilter .filterConditions .filterCondition .filterRemoveButton.remove .icon, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .filterRemoveButton.close .icon, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .filterRemoveButton.remove .icon {
+    background-position: 0 -507px;
+}
+
+.filterConditions .filterCondition .filterHeadline, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .filterHeadline {
+    padding: 0.5em 0.4em 0.1em;
+}
+
+ .filterConditions .filterCondition .line, .controlPane.unifiedFilter .baseFilterConditions .filterCondition .line {
+    line-height: 2.3em;
+    margin: 0.2em 0;
+    min-height: 2.3em;
+    padding-left: 0.5em;
+    position: relative;
+}
+
+.visualization {
+    position: relative;
+    z-index: 0;
+}	
+.mondrian {
+    height: 100%;
+    position: relative;
+}
+
+.renderTypeNode>.divider {
+    background-color: #999;
+    background: -moz-linear-gradient(0 0 270deg, #999, gray);
+    background: -webkit-gradient(linear, left top, left bottom, from(#999), to(gray));
+    display: block;
+    height: 14px;
+    position: relative;
+}
+
+.renderTypeNode>.divider .close {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    z-index: 1;
+}
+
+.renderTypeNode>.divider .close .icon {
+	background-position: 0 -50px;
+	background-color: transparent;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: left;
+    text-indent: -9999px;
+    background-image: url(../images/button_icons.png?1);
+    height: 10px;
+    width: 10px;
+}
+	
